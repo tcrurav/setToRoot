@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { MyTabsPage } from '../my-tabs/my-tabs';
 
 @Component({
   selector: 'page-home',
@@ -11,4 +12,7 @@ export class HomePage {
 
   }
 
+  goToTabs(){
+    this.navCtrl.push(MyTabsPage);
+  }
 }
